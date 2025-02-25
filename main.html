@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- DaisyUI and Tailwind CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font store -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        textClr: 'rgba(8, 8, 8, 0.5)',
+                        nextBg: 'rgb(244, 245, 247)'
+                    },
+                    fontFamily: {
+                        'outfit': ['Outfit', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome CDN Link -->
+    <script src="https://kit.fontawesome.com/5c54d19429.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-slate-800 font-outfit ">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-100">
+        <section class="rounded-b-xl bg-white ">
+            <nav class="flex justify-between items-center border-2 border-gray-600  mb-8 px-2 py-3">
+                <div class="flex items-center">
+                    <img src="./assets/Group.png" alt="">
+                    <div>
+                        <h3 class="text-xl font-semibold">$45000</h3>
+                        <p class="text-textClr">Available Balance</p>
+                    </div>
+                </div>
+                <div>
+                    <button class="btn text-textClr px-4 py-3">
+                        <i class="fa-solid fa-arrow-right-from-bracket scale-x-[-1]"></i>
+                        <span class="">Log-Out</span>
+                    </button>
+                </div>
+            </nav>
+            <!-- welcome to payoo! section -->
+            <section class="px-2">
+                <h1 class="text-2xl font-semibold ">🔥Welcome to Payooo!</h1>
+                <p class="text-textClr">
+                    Enjoy easy and convenient financial services with us. Cashout charge is low and
+                </p>
+            </section>
+
+            <!-- Card Section -->
+            <section class="grid grid-cols-3 gap-3 mt-6 px-2 pb-5">
+                <div
+                    class="px-5 py-4 border border-gray-600 cursor-pointer rounded-xl flex flex-col justify-center items-center ">
+                    <img src="./assets/wallet 1.png" alt="">
+                    <p class="text-xs">Add Money</p>
+                </div>
+                <div
+                    class="px-5 py-4 border border-gray-600 cursor-pointer rounded-xl flex flex-col justify-center items-center ">
+                    <img src="./assets/send 1.png" alt="">
+                    <p class="text-xs">Cashout</p>
+                </div>
+                <div
+                    class="px-5 py-4 border border-gray-600 cursor-pointer rounded-xl flex flex-col justify-center items-center ">
+                    <img src="./assets/money 1.png" alt="">
+                    <p class="text-xs">Transfer Money</p>
+                </div>
+                <div
+                    class="px-5 py-4 border border-gray-600 cursor-pointer rounded-xl flex flex-col justify-center items-center ">
+                    <img src="./assets/financial 1.png" alt="">
+                    <p class="text-xs">Get Bonus</p>
+                </div>
+                <div
+                    class="px-5 py-4 border border-gray-600 cursor-pointer rounded-xl flex flex-col justify-center items-center ">
+                    <img src="./assets/purse 1.png" alt="">
+                    <p class="text-xs">Pay Billy</p>
+                </div>
+                <div
+                    class="px-5 py-4 border border-gray-600 cursor-pointer rounded-xl flex flex-col justify-center items-center ">
+                    <img src="./assets/transaction 1.png" alt="">
+                    <p class="text-xs">Transactions</p>
+                </div>
+            </section>
+        </section>
+        <!-- Latest Payment Section -->
+        <section class="px-2 mt-8 mb-10">
+            <h3 class="text-xl font-semibold mb-4">Latest Payment</h3>
+            <div>
+                <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
+                    <div class="flex items-center gap-2">
+                        <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
+                            <img src="./assets/wallet 1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-textClr">Electricity Bill</h2>
+                            <p class="text-xs text-textClr">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
+                    <div class="flex items-center gap-2">
+                        <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
+                            <img src="./assets/wallet 1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-textClr">Bank Deposit</h2>
+                            <p class="text-xs text-textClr">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
+                    <div class="flex items-center gap-2">
+                        <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
+                            <img src="./assets/wallet 1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-textClr">Mobile Recharge</h2>
+                            <p class="text-xs text-textClr">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
+                    <div class="flex items-center gap-2">
+                        <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
+                            <img src="./assets/wallet 1.png" alt="">
+                        </div>
+                        <div>
+                            <h2 class="font-semibold text-textClr">Gas Bill</h2>
+                            <p class="text-xs text-textClr">Today 01:44 AM</p>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+</body>
+
+</html>
