@@ -32,15 +32,16 @@
     <!-- Font Awesome CDN Link -->
     <script src="https://kit.fontawesome.com/5c54d19429.js" crossorigin="anonymous"></script>
 </head>
+</head>
 
-<body class="bg-slate-800 min-h-screen font-outfit ">
-    <section class="max-w-md  mx-auto bg-gray-100">
+<body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-100">
         <section class="rounded-b-xl bg-white ">
             <nav class="flex justify-between items-center border-2 border-gray-600  mb-8 px-2 py-3">
                 <div class="flex items-center">
                     <img src="./assets/Group.png" alt="">
                     <div>
-                        <h3 class="text-xl font-semibold">$45000</h3>
+                        <h3 class="text-xl font-semibold">$ <span id="main-balance">45000</span></h3>
                         <p class="text-textClr">Available Balance</p>
                     </div>
                 </div>
@@ -93,75 +94,56 @@
                 </div>
             </section>
         </section>
-        <!-- Latest Payment Section -->
-        <section class="px-2 min-h-screen">
-            <section class=" mt-8 mb-10">
-                <h3 class="text-xl font-semibold mb-4">Latest Payment</h3>
-                <div>
-                    <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
-                        <div class="flex items-center gap-2">
-                            <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
-                                <img src="./assets/wallet 1.png" alt="">
-                            </div>
-                            <div>
-                                <h2 class="font-semibold text-textClr">Electricity Bill</h2>
-                                <p class="text-xs text-textClr">Today 01:44 AM</p>
-                            </div>
+
+        <!-- Add Money Section -->
+        <section class="px-2">
+            <h2 class="text-xl font-semibold mb-2 mt-5 ">Add Money</h2>
+            <div class="hero-content flex-col lg:flex-row-reverse ">
+                <div class="card w-full max-w-sm shrink-0 shadow-2xl p-4">
+                    <form class="">
+                        <label for="custom-select" class="block text-gray-700 mb-1">Select A
+                            Bank</label>
+                        <select id="custom-select" class="select w-full" aria-placeholder="hi">
+                            <option value="" disabled selected hidden>Select Bank</option>
+                            <option value="1">BKash</option>
+                            <option value="2">nagad</option>
+                            <option value="3">Rocket</option>
+                            <option value="">Upay</option>
+                        </select>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Bank Account Number</span>
+                            </label>
+                            <input type="number" value="013141813695" placeholder="Enter 11 digit account number"
+                                class="input input-bordered" required />
                         </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Amount to Add</span>
+                            </label>
+                            <input value="200" type="number" id="amount" placeholder="Add Amount to withdraw"
+                                class="input input-bordered" required />
                         </div>
-                    </div>
-                    <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
-                        <div class="flex items-center gap-2">
-                            <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
-                                <img src="./assets/wallet 1.png" alt="">
-                            </div>
-                            <div>
-                                <h2 class="font-semibold text-textClr">Bank Deposit</h2>
-                                <p class="text-xs text-textClr">Today 01:44 AM</p>
-                            </div>
+                        <div class="form-control">
+                            <label class="label">
+                                <span class="label-text">Pin Number</span>
+                            </label>
+                            <input type="number" value="1234" id="pinNumber" placeholder="Enter 4 digit pin number"
+                                class="input input-bordered" required />
+                            <label class="label">
+                                <a href="#" class="label-text-alt link link-hover">Forgot
+                                    password?</a>
+                            </label>
                         </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        <div class="form-control mt-6">
+                            <button id="add-money" class="btn btn-primary">Login</button>
                         </div>
-                    </div>
-                    <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
-                        <div class="flex items-center gap-2">
-                            <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
-                                <img src="./assets/wallet 1.png" alt="">
-                            </div>
-                            <div>
-                                <h2 class="font-semibold text-textClr">Mobile Recharge</h2>
-                                <p class="text-xs text-textClr">Today 01:44 AM</p>
-                            </div>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center bg-white px-4 py-3 rounded-xl mb-3">
-                        <div class="flex items-center gap-2">
-                            <div class="h-12 w-12 p-3 rounded-full bg-gray-200">
-                                <img src="./assets/wallet 1.png" alt="">
-                            </div>
-                            <div>
-                                <h2 class="font-semibold text-textClr">Gas Bill</h2>
-                                <p class="text-xs text-textClr">Today 01:44 AM</p>
-                            </div>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                        </div>
-                    </div>
+                    </form>
                 </div>
-            </section>
+            </div>
         </section>
     </section>
-
-    <script src="./script/main.js">
-
-    </script>
+    <script src="script/recap.js"></script>
 </body>
 
 </html>
