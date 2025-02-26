@@ -1,6 +1,5 @@
-document.querySelector('#add-money').addEventListener('click', (event) => {
+document.querySelector('#add-money-btn').addEventListener('click', (event) => {
     event.preventDefault();
-
     let pinNumber = document.querySelector("#pinNumber").value;
     let amount = document.querySelector('#amount').value;
     let convertAmount = parseFloat(amount);
